@@ -1,7 +1,7 @@
 === Registry Form Pro ===
 Contributors: CityRock007
 Author: James P. Friday
-Author URI: https://servinux.com
+Author URI: https://github.com/CityRock007/CityRock007/
 Tags: multi-step form, form builder, servinux checkout, paystack, high performance form, drag and drop form, enterprise forms, cyberpanel, litespeed
 Requires at least: 5.8
 Tested up to: 6.4
