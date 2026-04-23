@@ -1,0 +1,175 @@
+/**
+ * Registry Form Pro - Admin Builder Styles
+ * Developed by: James P. Friday
+ */
+
+/* Container & Layout */
+.rfp-builder-wrap {
+    margin: 20px 20px 0 0;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Field Item - The Main Card */
+.rfp-field-item {
+    background: #ffffff;
+    border-left: 5px solid #3b82f6; /* Premium Blue Accent */
+    margin-bottom: 15px;
+    border-radius: 12px;
+    display: flex;
+    align-items: stretch;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.rfp-field-item:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+/* Drag Handle */
+.rfp-drag-handle {
+    padding: 20px 15px;
+    background: #f8fafc;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #f1f5f9;
+    color: #cbd5e1;
+    cursor: grab !important; /* Move Pointer */
+}
+
+.rfp-drag-handle:active {
+    cursor: grabbing !important;
+}
+
+/* Main Content Area */
+.rfp-field-main {
+    flex: 1;
+    padding: 20px;
+}
+
+.rfp-field-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.rfp-field-header strong {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #94a3b8;
+}
+
+.rfp-type-tag {
+    background: #eff6ff;
+    color: #3b82f6;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+/* Question Input - Google Forms Style */
+.field-label {
+    width: 100% !important;
+    border: none !important;
+    border-bottom: 2px solid #f1f5f9 !important;
+    padding: 12px 0 !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    color: #1e293b !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    transition: border-color 0.3s ease !important;
+    cursor: text !important;
+}
+
+.field-label:focus {
+    border-bottom-color: #3b82f6 !important;
+    outline: none !important;
+}
+
+/* Meta Section (Step & Required) */
+.rfp-field-meta {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.field-step {
+    background: #f0f9ff !important;
+    border: 1px solid #3b82f6 !important;
+    color: #2563eb !important;
+    font-weight: 700 !important;
+    border-radius: 8px !important;
+    padding: 0 10px !important;
+    height: 32px !important;
+    font-size: 12px !important;
+    cursor: pointer !important;
+}
+
+.rfp-req-toggle {
+    font-size: 13px;
+    font-weight: 600;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer !important;
+}
+
+.rfp-req-toggle input {
+    margin: 0 !important;
+    cursor: pointer !important;
+}
+
+/* Actions Section */
+.rfp-field-actions {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+}
+
+.rfp-remove-field {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+    border: none !important;
+    background: #fff1f2 !important;
+    color: #e11d48 !important;
+    cursor: pointer !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.rfp-remove-field:hover {
+    background: #ffe4e6 !important;
+    transform: scale(1.1);
+}
+
+/* Placeholder for Dragging */
+.rfp-sortable-placeholder {
+    border: 2px dashed #3b82f6;
+    background: #eff6ff;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    visibility: visible !important;
+    height: 100px;
+}
+
+/* Animations */
+.rfp-new-field {
+    animation: rfpPopIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+@keyframes rfpPopIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
