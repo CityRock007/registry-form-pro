@@ -5,7 +5,7 @@
  * Description:       A high-performance, enterprise-grade multi-step form engine for WordPress. Featuring a fluid Drag & Drop builder, native Servinux & Paystack integration, and automated multi-admin notifications. Designed for high-speed reliability on LiteSpeed and CyberPanel environments.
  * Version:           1.1.0
  * Author:            James P. Friday
- * Author URI:        https://servinux.com
+ * Author URI:        https://github.com/CityRock007/CityRock007/
  * Text Domain:       rfp
  * Domain Path:       /languages
  * Requires at least: 5.8
